@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Game</title>
 </head>
 <body>
-    <div>
-        <button onclick="choose(1)">🪨</button>
-        <button onclick="choose(2)">🧻</button>
-        <button onclick="choose(3)">✂️</button>
-    </div>
-    <button onclick="play()">Play</button>
 
     <div>
+        <div class="choose">
+            <h1>Choose</h1>
+            <button onclick="choose(1)">🪨</button>
+            <button onclick="choose(2)">🧻</button>
+            <button onclick="choose(3)">✂️</button>
+        </div>
+        <button class="play" onclick="play()">Play</button>
+    </div>
+
+    
+
+    <div class="vs">
         <h1 id="p1"></h1>
         <h1>VS</h1>
         <h1 id="p2"></h1>
